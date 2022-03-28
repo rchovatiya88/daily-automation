@@ -1,14 +1,19 @@
-describe('Go to Twitter and Login', () => {
+describe('Go to eban search for mens jewelry', () => {
     it('Homepage', () => {
-        cy.visit('https://www.ebay.com/');
+        cy.visit('https://www.ebay.com/b/Mens-Jewelry/10290?Color=Gold&Main%2520Stone=Diamond&Metal=Yellow%2520Gold&Metal%2520Purity=14k&LH_BIN=1&Type=Necklace%7CRing%7CPendant&rt=nc&_udlo=150&_udhi=1%2C500&mag=' + 1);
 
     });
 
-    it('search for stuff', () => {
-
-        cy.findByText('').click();
-        cy.get('').click();
+    it('wait for stuff', () => {
+        cy.wait(5000);
+        // cy.get('#gh-ac').type("gold chain with pendant").type('{enter}');
+        // cy.get('#gh-btn').click();
     });
+
+    // it('click on stuff', () => {
+    //     cy.findAllByText('Buy It Now').click({ multiple: true });
+
+    // });
 
 
 
